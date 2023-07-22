@@ -1,0 +1,110 @@
+.contact-heading{
+    font-family: "montserrat";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+    color: antiquewhite;
+    background: rgb(255,178,246);
+    background: -moz-linear-gradient(79deg, rgba(255,178,246,1) 0%, rgba(231,39,199,1) 49%, rgba(219,17,186,1) 100%);
+    background: -webkit-linear-gradient(79deg, rgba(255,178,246,1) 0%, rgba(231,39,199,1) 49%, rgba(219,17,186,1) 100%);
+    background: linear-gradient(79deg, rgba(255,178,246,1) 0%, rgba(231,39,199,1) 49%, rgba(219,17,186,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb2f6",endColorstr="#db11ba",GradientType=1); ;
+}
+
+.contact-info{
+    font-family: "montserrat";
+    display: flex;
+    align-items: center;
+    min-height: 30vh;
+    justify-content: center;
+    padding: 0 20px;
+    background: rgb(255,178,246);
+    background: -moz-linear-gradient(79deg, rgba(255,178,246,1) 0%, rgba(231,39,199,1) 49%, rgba(219,17,186,1) 100%);
+    background: -webkit-linear-gradient(79deg, rgba(255,178,246,1) 0%, rgba(231,39,199,1) 49%, rgba(219,17,186,1) 100%);
+    background: linear-gradient(79deg, rgba(255,178,246,1) 0%, rgba(231,39,199,1) 49%, rgba(219,17,186,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb2f6",endColorstr="#db11ba",GradientType=1); ;
+}
+
+.card1{
+    margin: 0 10px;
+    padding: 0 20px;
+    background: #313f46;
+    width: 33%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.card1-a{
+    background: palevioletred;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+}
+.card1-icon{
+   width: 30px;
+   height: 30px;
+   padding-left: 25%;
+   transition: transform 0.5s ease;
+}
+
+.card1:hover .card1-icon{
+    color: palevioletred;
+    transform: scale(1.6);
+}
+
+.card1:hover .card1-a{
+    background: none;
+}
+
+.card1 .p{
+    opacity: 0;
+    max-height: 0;
+    letter-spacing: 2px;
+    font-weight: 300;
+    transition: transform 0.5s ease;
+}
+
+.card1:hover .p{
+    max-height: 40px;
+    opacity: 1;
+}
+
+.card1-icon.click{
+    color: palevioletred;
+    transform: scale(1.6);
+}
+
+.card1-a.click{
+    background: none;
+}
+
+.p.click{
+    max-height: 40px;
+    opacity: 1;
+}
+
+@media screen and (max-width:800px) {
+    .contact-info{
+        flex-direction: column;
+    }
+
+    .card1{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}

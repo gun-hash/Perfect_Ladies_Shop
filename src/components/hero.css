@@ -1,0 +1,123 @@
+/* hero.css */
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  max-height: 600px; /* Adjust this value as needed */
+  overflow: hidden;
+}
+
+.hero-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  text-align: left;
+  color:  #990033;
+  padding: 20px;
+  max-width: 50%;
+}
+  
+  .hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-text button {
+    background-color: #ff1694;
+    color: whitesmoke;
+    padding: 0.7rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+  }
+
+  .hero-text button:hover{
+    scale: 1.05;
+    color: rgb(255, 206, 239);
+  }
+  
+  /* Media queries for responsive design */
+  
+  /* Small mobile devices (up to 480px) */
+  @media only screen and (max-width: 480px) {
+    .hero-text {
+      width: 90%;
+      margin-left: 5%;
+      top: 40%;
+    }
+  
+    .hero-text h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .hero-text p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  
+    .hero-text button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Large mobile devices (481px to 767px) */
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .hero-text {
+      width: 90%;
+      margin-left: 5%;
+      top: 45%;
+    }
+  
+    .hero-text h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+  
+    .hero-text p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+  
+    .hero-text button {
+      font-size: 14px;
+      padding: 10px 18px;
+    }
+  }
+  
+  /* Tablets (768px to 1023px) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero-text {
+      width: 90%;
+      margin-left: 5%;
+      top: 50%;
+    }
+  
+    .hero-text h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+  
+    .hero-text p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+  }
+  
