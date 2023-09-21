@@ -48,6 +48,7 @@ var Contact = () => {
   if (isHoverable) {
     return (
       <>
+        <div id="contact">
         <h1 className="contact-heading">Contact Us</h1>
         <div className="contact-info">
           {contactData.map((contact, index) => (
@@ -59,11 +60,13 @@ var Contact = () => {
             </div>
           ))}
         </div>
+          </div>
       </>
     );
   } else {
     return (
       <>
+        <div id="contact">
         <h1 className="contact-heading">Contact Us</h1>
         <div className="contact-info">
           {contactData.map((contact, index) => (
@@ -90,6 +93,7 @@ var Contact = () => {
             </button>
           ))}
         </div>
+          </div>
       </>
     );
   }
