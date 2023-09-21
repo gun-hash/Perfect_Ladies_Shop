@@ -120,4 +120,11 @@
       margin-bottom: 25px;
     }
   }
+
+@media (max-width: 650px) {
+  .hero-text p{
+    display: none;
+  }
+
+}
   
