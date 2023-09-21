@@ -71,7 +71,7 @@ const Drops = () => {
 
   if (isHoverable) {
     return (
-      <div className="drops-container">
+      <div className="drops-container" id="drops">
         <h1 className="drops-heading">Latest Drops</h1>
         <div className="cards-container">
           {cardsData.map((card, index) => (
