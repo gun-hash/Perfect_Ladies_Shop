@@ -21,19 +21,19 @@ function Navbar() {
           </div>
           <ul className="links">
             <li>
-              <a href="hero">Home</a>
+              <a href="#hero">Home</a>
             </li>
             <li>
-              <a href="drops">Latest Drops</a>
+              <a href="#drops">Latest Drops</a>
             </li>
             <li>
-              <a href="about">About Us</a>
+              <a href="#about">About Us</a>
             </li>
             <li>
-              <a href="contact">Contact Us</a>
+              <a href="#contact">Contact Us</a>
             </li>
           </ul>
-          <a href="#" className="action_btn">
+          <a href="#hero" className="action_btn">
             Buy Now
           </a>
           <div className="toggle_btn" onClick={toggleMenu}>
@@ -43,19 +43,19 @@ function Navbar() {
         <div className={`dropdown_menu ${isOpen ? "open" : ""}`}>
           <ul>
             <li>
-              <a href="hero">Home</a>
+              <a href="#hero">Home</a>
             </li>
             <li>
-              <a href="drops">Latest Drops</a>
+              <a href="#drops">Latest Drops</a>
             </li>
             <li>
-              <a href="about">About Us</a>
+              <a href="#about">About Us</a>
             </li>
             <li>
-              <a href="contact">Contact Us</a>
+              <a href="#contact">Contact Us</a>
             </li>
             <li>
-              <a href="#" className="action_btn">
+              <a href="#hero" className="action_btn">
                 Buy Now
               </a>
             </li>
