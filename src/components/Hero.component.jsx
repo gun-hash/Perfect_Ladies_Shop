@@ -4,7 +4,7 @@ import Hero1 from "../images/hero-img.jpg";
 function Hero() {
   return (
     <>
-      <div className="hero-container">
+      <div className="hero-container" id="hero">
         <img src={Hero1} width="100%" alt="" />
         <div className="hero-text">
           <h1>Perfect Ladies Shop - Where fashion meets perfection</h1>
