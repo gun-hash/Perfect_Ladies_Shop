@@ -4,7 +4,7 @@ import { aboutus } from "../images/index";
 var About = () => {
   return (
     <>
-      <div className="About">
+      <div className="About" id="about">
         <div className="about-heading">
           <h1>About Us</h1>
           <p>
